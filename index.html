@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello world</title>
+  <link rel="shortcut icon"  href="Iconarchive-Red-Orb-Alphabet-Letter-Y.ico">
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+  
+  <style type="text/css">     
+  #hero-image{
+  background: url("https://llandscapes-ee1.kxcdn.com/wp-content/uploads/2015/02/11763686274_ea386f73bb_k.jpg") no-repeat center; 
+  background-size: cover;
+  height: 690px;
+  position: relative;
+
+  }
+  #hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-family: montserrat;
+  }
+
+  #name{
+    font-size: 30px;
+    color: #fff;
+    font-family: Montserrat;
+    text-decoration: none;
+  }
+    
+  body
+  {
+   margin: 0;
+    
+  }
+  ul
+  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:#fff;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+    #hoe
+      {
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        
+      }     
+    .you
+    {
+      padding: 20px 40px;
+      background: none;
+      border: 2px solid #fff;
+      color: white;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-family: montserrat;
+      transition: 0.5s;
+    }
+    .you:hover{
+      background: white;
+      border: 2px solid #000;
+      color: black;
+    }
+      
+  </style>
+  <body onload="mytime()">
+  <div id="hero-image">
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div id="hero-text">
+    <h1 id="show"  align="center"></h1>
+    <p  id="time" align="center"></p>
+  </div>
+</div>
+  
+<script type="text/javascript">   
+  function mytime() 
+{
+  
+  var d = new Date();
+  m=d.getMinutes();
+  s=d.getSeconds();
+  
+
+  if (d.getMinutes()<10)
+  {
+      m='0'+d.getMinutes();    //adding 0 in front of minutes 1-9
+    }
+    
+
+    if (d.getSeconds()<10) 
+    {
+      s='0'+d.getSeconds();   //adds 0 in front of seconds 1-9
+    }
+
+
+    document.getElementById("show").innerHTML = d.getHours()+':'+m+':'+s; //displays time
+    var t = setTimeout(mytime, 500);
+    
+}
+  
+  var x=new Date();
+  c=x.getHours();
+  if(c>=12 && c<15)
+  document.getElementById("time").innerHTML="Good Afternoon ";
+  else if (c>=15 && c<=24) 
+  document.getElementById("time").innerHTML='Good evening ';
+  else if (c>=0 && c<12)  
+  document.getElementById("time").innerHTML='Good Morning ';
+  var t = setTimeout(wish,1000);
+  
+
+</script>
+</body>
+</html>
+
+
