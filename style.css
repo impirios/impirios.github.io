@@ -38,6 +38,7 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  font-family: Montserrat;
 }
 
 li {
@@ -53,7 +54,7 @@ li a {
 }
 
 li a:hover {
-  color: white;
+  color:#4CAF50;
 }
 #show{
   font-size:50px;
@@ -62,13 +63,12 @@ li a:hover {
 .active {
   background-color: #4CAF50;
 }
-    #hoe
-      {
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        
-      }     
+#hoe
+{
+text-align: center;
+top: 50%;
+left: 50%;
+}     
     .you
     {
       padding: 20px 40px;
