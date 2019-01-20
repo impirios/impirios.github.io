@@ -1,7 +1,7 @@
 #hero-image{
   background: url("https://llandscapes-ee1.kxcdn.com/wp-content/uploads/2015/02/11763686274_ea386f73bb_k.jpg") no-repeat center; 
   background-size: cover;
-  height: 690px;
+  height: 697px;
   position: relative;
 
   }
@@ -22,7 +22,6 @@
     font-family: Montserrat;
     text-decoration: none;
   }
-    
   body
   {
    margin: 0;
@@ -34,7 +33,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background:#fff;
+  background:black;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -47,14 +46,22 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 a:hover{
-  color: #FBBC05;
+  color: lightgreen;
 }
+
+#githubac{
+  background: white;
+  background-size: cover;
+  
+
+  }
+
 #image{
     background: url("https://images.wallpaperscraft.com/image/notebook_emptiness_old_table_pen_writing_80056_1920x1080.jpg") center;
     background-size: cover;
