@@ -39,6 +39,9 @@
   top: 0;
   font-family: Montserrat;
 }
+#show{
+  font-size: 50px;
+}
 
 li {
   float: left;
