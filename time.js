@@ -27,7 +27,7 @@
   c=x.getHours();
   if(c>=12 && c<15)
   document.getElementById("time").innerHTML="You should be working its afternoon";
-  else if (c>=15 && c<=22) 
+  else if (c>=15 && c<22) 
   document.getElementById("time").innerHTML='Evenings are the time to think about';
   else if (c>=22 && c<=24) 
   document.getElementById("time").innerHTML='Just sleep already.';
